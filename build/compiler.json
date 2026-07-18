@@ -1,0 +1,38 @@
+{
+  "schema": "crosseno-compiler-config",
+  "version": 1,
+  "metadata": {
+    "packId": "crosseno.language-en.dev",
+    "answerLanguage": "en",
+    "dataVersion": "2026.07.1",
+    "normalizationProfileId": "en.nfc.upper-grid.unicode15.1.v1",
+    "tokenizationProfileId": "en.grapheme-cells.unicode15.1.v1",
+    "stableKeyAlgorithmVersion": 1
+  },
+  "stableKeyNamespace": "crosseno.language-en",
+  "compatibility": {"minimumCoreVersion": "0.1.0", "minimumLexiconVersion": "0.1.0"},
+  "compilerVersion": "0.1.0",
+  "sources": [{
+    "path": "../resources/source/curated-en.json",
+    "format": "json",
+    "provenance": {
+      "id": "crosseno-curated-en-2026-07",
+      "url": "https://github.com/Crosseno/language-en/tree/0.1.0/resources/source/curated-en.json",
+      "versionOrDate": "2026-07-16",
+      "sha256": "35b218aa1b4a4af6c3ea51b8da2201bfdf230fa31a6f1aa1b05199eb12869d97",
+      "licenseExpression": "CC0-1.0",
+      "attribution": "Crosseno contributors, curated English development lexicon",
+      "transformation": "NFC normalization; Unicode default uppercase; removal of Unicode separators and punctuation from grid text; extended-grapheme cell tokenization",
+      "redistributionStatus": "redistributable"
+    }
+  }],
+  "limits": {
+    "maximumSourceBytes": 1000000,
+    "maximumRecords": 1000,
+    "maximumFields": 64,
+    "maximumFieldBytes": 4096,
+    "maximumJsonDepth": 16
+  },
+  "failOnRejection": true,
+  "ordinalSpaceId": "crosseno-language-en-2026-07-1"
+}

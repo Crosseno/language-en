@@ -1,0 +1,12 @@
+CC0 1.0 Universal
+
+The curated lexical dataset in this package is dedicated to the public domain
+under the Creative Commons CC0 1.0 Universal legal tool. To the extent possible
+under law, the contributors have waived all copyright and related or neighboring
+rights in that dataset, without conditions.
+
+Canonical legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Human-readable summary: https://creativecommons.org/publicdomain/zero/1.0/
+
+This notice applies to resources/source/curated-en.json and its compiled data,
+not to package source code (which is licensed separately under MIT).

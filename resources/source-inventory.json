@@ -1,0 +1,17 @@
+{
+  "schema": "crosseno-source-inventory",
+  "version": 1,
+  "sources": [
+    {
+      "id": "crosseno-curated-en-2026-07",
+      "url": "https://github.com/Crosseno/language-en/tree/0.1.0/resources/source/curated-en.json",
+      "versionOrDate": "2026-07-16",
+      "sha256": "35b218aa1b4a4af6c3ea51b8da2201bfdf230fa31a6f1aa1b05199eb12869d97",
+      "licenseExpression": "CC0-1.0",
+      "attribution": "Crosseno contributors, curated English development lexicon",
+      "transformation": "NFC normalization; Unicode default uppercase; removal of Unicode separators and punctuation from grid text; extended-grapheme cell tokenization",
+      "redistributionStatus": "redistributable",
+      "redistributionEvidence": "Original data dedicated under CC0-1.0 by its contributors; see LICENSES/CC0-1.0.txt"
+    }
+  ]
+}

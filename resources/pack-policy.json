@@ -1,0 +1,8 @@
+{
+  "schema": "crosseno-pack-policy",
+  "version": 1,
+  "expectedInstalledSizeBytes": 1000000,
+  "distributionDecision": "Ship only the small reviewed CC0 development dataset in 0.x releases.",
+  "updatePolicy": "Data changes use a new calendar data version and require deterministic artifact regeneration.",
+  "largePackDecision": "Deferred until source licensing, attribution, redistribution rights, and installed-size impact are separately reviewed."
+}
