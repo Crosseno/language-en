@@ -1,0 +1,25 @@
+{
+  "schema": "crosseno-language-profile",
+  "version": 1,
+  "language": "en",
+  "normalizationProfileId": "en.nfc.upper-grid.unicode15.1.v1",
+  "tokenizationProfileId": "en.grapheme-cells.unicode15.1.v1",
+  "unicodeVersion": "15.1.0",
+  "referenceIcuVersion": "74.2",
+  "normalization": {
+    "form": "NFC",
+    "caseMapping": "Unicode Default Case Conversion to uppercase, locale-independent",
+    "displayOnlyCategories": ["Unicode Separator (Z)", "Unicode Punctuation (P)"],
+    "gridCharacters": "Unicode letters and combining marks",
+    "transliteration": "none"
+  },
+  "tokenization": {
+    "algorithm": "Unicode extended grapheme clusters (UAX 29)",
+    "cellsPerCluster": 1
+  },
+  "dialects": {
+    "tags": ["en", "en-AU", "en-CA", "en-GB", "en-US"],
+    "fallbackPolicy": "rfc4647_lookup",
+    "crossRegionFallback": false
+  }
+}
