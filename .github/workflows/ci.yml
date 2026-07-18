@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        dependencies: [lowest, current]
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: language-en
+      - uses: actions/checkout@v5
+        with:
+          repository: Crosseno/core
+          path: core
+      - uses: actions/checkout@v5
+        with:
+          repository: Crosseno/lexicon
+          path: lexicon
+      - uses: actions/checkout@v5
+        with:
+          repository: Crosseno/lexicon-index
+          path: lexicon-index
+      - uses: actions/checkout@v5
+        with:
+          repository: Crosseno/lexicon-sqlite
+          path: lexicon-sqlite
+      - uses: actions/checkout@v5
+        with:
+          repository: Crosseno/compiler
+          path: compiler
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          coverage: none
+          extensions: intl, mbstring, pdo_sqlite
+          tools: composer:v2
+      - uses: ramsey/composer-install@v4
+        with:
+          dependency-versions: ${{ matrix.dependencies }}
+          working-directory: language-en
+      - run: composer check
+        working-directory: language-en
