@@ -1,0 +1,44 @@
+{
+    "name": "crosseno/language-en",
+    "description": "Versioned English language rules and a legally redistributable development lexicon for Crosseno.",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {"type": "path", "url": "../core", "options": {"symlink": true, "versions": {"crosseno/core": "0.1.0"}}},
+        {"type": "path", "url": "../lexicon", "options": {"symlink": true, "versions": {"crosseno/lexicon": "0.1.0"}}},
+        {"type": "path", "url": "../lexicon-sqlite", "options": {"symlink": true, "versions": {"crosseno/lexicon-sqlite": "0.1.0"}}},
+        {"type": "path", "url": "../lexicon-index", "options": {"symlink": true, "versions": {"crosseno/lexicon-index": "0.1.0"}}},
+        {"type": "path", "url": "../compiler", "options": {"symlink": true, "versions": {"crosseno/compiler": "0.1.0"}}}
+    ],
+    "require": {
+        "php": "^8.5",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "crosseno/core": "^0.1",
+        "crosseno/lexicon": "^0.1",
+        "crosseno/lexicon-index": "^0.1",
+        "crosseno/lexicon-sqlite": "^0.1"
+    },
+    "require-dev": {
+        "crosseno/compiler": "^0.1",
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "phpstan/phpstan": "^2.2",
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {"psr-4": {"Crosseno\\LanguageEn\\": "src/"}},
+    "autoload-dev": {"psr-4": {"Crosseno\\LanguageEn\\Build\\": "build/", "Crosseno\\LanguageEn\\Tests\\": "tests/"}},
+    "scripts": {
+        "artifacts:build": "php bin/build-artifacts.php",
+        "artifacts:verify": "php bin/verify-artifacts.php",
+        "test": "phpunit",
+        "analyse": "phpstan analyse --no-progress",
+        "lint": "php-cs-fixer fix --dry-run --diff",
+        "format": "php-cs-fixer fix",
+        "check": ["@lint", "@analyse", "@test", "@artifacts:verify"]
+    },
+    "config": {"allow-plugins": {}, "sort-packages": true},
+    "support": {
+        "issues": "https://github.com/Crosseno/language-en/issues",
+        "source": "https://github.com/Crosseno/language-en"
+    }
+}

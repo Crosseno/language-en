@@ -1,0 +1,9 @@
+parameters:
+    level: max
+    treatPhpDocTypesAsCertain: false
+    paths:
+        - bin
+        - build
+        - src
+    tmpDir: .phpstan-cache
+    reportUnmatchedIgnoredErrors: true
