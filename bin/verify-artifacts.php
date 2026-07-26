@@ -50,7 +50,7 @@ if ($manifestSources !== $inventorySources) {
     throw new RuntimeException('Manifest and source inventory disagree.');
 }
 $sourceHash = hash_file('sha256', \dirname(__DIR__) . '/resources/source/curated-en.json');
-if (!\is_string($sourceHash) || !hash_equals($inventorySources['crosseno-curated-en-2026-07']['sha256'], $sourceHash)) {
+if (!\is_string($sourceHash) || !hash_equals($inventorySources['crosseno-native-en-1000-2026-07']['sha256'], $sourceHash)) {
     throw new RuntimeException('Curated source checksum does not agree with its inventory.');
 }
 

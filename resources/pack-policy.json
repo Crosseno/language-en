@@ -1,8 +1,8 @@
 {
   "schema": "crosseno-pack-policy",
   "version": 1,
-  "expectedInstalledSizeBytes": 1000000,
-  "distributionDecision": "Ship only the small reviewed CC0 development dataset in 0.x releases.",
+  "expectedInstalledSizeBytes": 5000000,
+  "distributionDecision": "Crosseno completed editorial review of the 1,000-answer CC0 development pack. Publication requires final release, contractual, and legal checks.",
   "updatePolicy": "Data changes use a new calendar data version and require deterministic artifact regeneration.",
-  "largePackDecision": "Deferred until source licensing, attribution, redistribution rights, and installed-size impact are separately reviewed."
+  "largePackDecision": "Expansion beyond 1,000 answers is deferred until editorial corrections, source licensing, attribution, redistribution rights, benchmarks, and installed-size impact are reviewed."
 }

@@ -25,7 +25,7 @@ final class EnglishPackTest extends TestCase
         self::assertSame('en', $manifest->metadata->answerLanguage->value);
         self::assertSame(EnglishProfile::NORMALIZATION_ID, $manifest->metadata->normalizationProfileId);
         self::assertSame(EnglishProfile::TOKENIZATION_ID, $manifest->metadata->tokenizationProfileId);
-        self::assertSame(25, $manifest->recordCount);
+        self::assertSame(1000, $manifest->recordCount);
         self::assertSame(0, $manifest->rejectionCount);
         self::assertCount(1, $manifest->sources());
 
@@ -40,7 +40,7 @@ final class EnglishPackTest extends TestCase
             CandidateOrdering::RankDescending,
         ));
 
-        self::assertSame(1, $result->totalMatches);
+        self::assertSame(2, $result->totalMatches);
         self::assertSame('cat', $result->records()[0]->answer->displayText);
         self::assertCount(3, $result->records()[0]->answer->cells());
     }

@@ -3,15 +3,15 @@
   "version": 1,
   "sources": [
     {
-      "id": "crosseno-curated-en-2026-07",
+      "id": "crosseno-native-en-1000-2026-07",
       "url": "https://github.com/Crosseno/language-en/tree/0.1.0/resources/source/curated-en.json",
-      "versionOrDate": "2026-07-16",
-      "sha256": "35b218aa1b4a4af6c3ea51b8da2201bfdf230fa31a6f1aa1b05199eb12869d97",
+      "versionOrDate": "2026-07-26",
+      "sha256": "f212ad78bbb347649318a98ceafaaadd9c540fe28f31032d0b4f5232179ebccc",
       "licenseExpression": "CC0-1.0",
-      "attribution": "Crosseno contributors, curated English development lexicon",
-      "transformation": "NFC normalization; Unicode default uppercase; removal of Unicode separators and punctuation from grid text; extended-grapheme cell tokenization",
+      "attribution": "Crosseno native English lexicon; generative-AI-assisted content reviewed and approved by Crosseno",
+      "transformation": "Deterministic native-record generation; NFC normalization; Unicode default uppercase; removal of Unicode separators and punctuation from grid text; extended-grapheme cell tokenization",
       "redistributionStatus": "redistributable",
-      "redistributionEvidence": "Original data dedicated under CC0-1.0 by its contributors; see LICENSES/CC0-1.0.txt"
+      "redistributionEvidence": "Crosseno-reviewed native data dedicated under CC0-1.0; see LICENSES/CC0-1.0.txt."
     }
   ]
 }

@@ -1,0 +1,44 @@
+{
+  "schema": "crosseno-language-pack-benchmark",
+  "version": 1,
+  "dataVersion": "2026.07.3",
+  "requestProfile": {
+    "dimensions": ["5x5", "7x7", "9x9"],
+    "strategies": ["fast", "balanced"],
+    "difficulties": ["easy", "medium", "hard"],
+    "seeds": [1, 42, 12345],
+    "attempts": 16,
+    "nodeBudget": 100000,
+    "backtrackBudget": 100000,
+    "qualityThreshold": 0,
+    "minimumEntryLength": 3,
+    "validationProfile": "permissive"
+  },
+  "summary": {
+    "requests": 54,
+    "succeeded": 54,
+    "failed": 0,
+    "strictReproductionChecksPassed": 54
+  },
+  "groups": [
+    {"strategy":"fast","difficulty":"easy","dimensions":"5x5","succeeded":3,"requests":3,"totalEntries":13,"totalExploredNodes":6546},
+    {"strategy":"fast","difficulty":"easy","dimensions":"7x7","succeeded":3,"requests":3,"totalEntries":13,"totalExploredNodes":6694},
+    {"strategy":"fast","difficulty":"easy","dimensions":"9x9","succeeded":3,"requests":3,"totalEntries":29,"totalExploredNodes":28091},
+    {"strategy":"fast","difficulty":"medium","dimensions":"5x5","succeeded":3,"requests":3,"totalEntries":12,"totalExploredNodes":5027},
+    {"strategy":"fast","difficulty":"medium","dimensions":"7x7","succeeded":3,"requests":3,"totalEntries":18,"totalExploredNodes":31583},
+    {"strategy":"fast","difficulty":"medium","dimensions":"9x9","succeeded":3,"requests":3,"totalEntries":38,"totalExploredNodes":148794},
+    {"strategy":"fast","difficulty":"hard","dimensions":"5x5","succeeded":3,"requests":3,"totalEntries":12,"totalExploredNodes":2851},
+    {"strategy":"fast","difficulty":"hard","dimensions":"7x7","succeeded":3,"requests":3,"totalEntries":14,"totalExploredNodes":13602},
+    {"strategy":"fast","difficulty":"hard","dimensions":"9x9","succeeded":3,"requests":3,"totalEntries":22,"totalExploredNodes":34952},
+    {"strategy":"balanced","difficulty":"easy","dimensions":"5x5","succeeded":3,"requests":3,"totalEntries":15,"totalExploredNodes":102184},
+    {"strategy":"balanced","difficulty":"easy","dimensions":"7x7","succeeded":3,"requests":3,"totalEntries":19,"totalExploredNodes":194300},
+    {"strategy":"balanced","difficulty":"easy","dimensions":"9x9","succeeded":3,"requests":3,"totalEntries":33,"totalExploredNodes":107919},
+    {"strategy":"balanced","difficulty":"medium","dimensions":"5x5","succeeded":3,"requests":3,"totalEntries":15,"totalExploredNodes":42417},
+    {"strategy":"balanced","difficulty":"medium","dimensions":"7x7","succeeded":3,"requests":3,"totalEntries":18,"totalExploredNodes":133124},
+    {"strategy":"balanced","difficulty":"medium","dimensions":"9x9","succeeded":3,"requests":3,"totalEntries":36,"totalExploredNodes":272427},
+    {"strategy":"balanced","difficulty":"hard","dimensions":"5x5","succeeded":3,"requests":3,"totalEntries":14,"totalExploredNodes":29867},
+    {"strategy":"balanced","difficulty":"hard","dimensions":"7x7","succeeded":3,"requests":3,"totalEntries":18,"totalExploredNodes":114879},
+    {"strategy":"balanced","difficulty":"hard","dimensions":"9x9","succeeded":3,"requests":3,"totalEntries":27,"totalExploredNodes":152713}
+  ],
+  "interpretation": "This deterministic development matrix demonstrates compatibility for the listed requests. Three seeds per group are not enough to claim a general production success rate."
+}

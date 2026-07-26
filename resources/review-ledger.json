@@ -1,0 +1,18 @@
+{
+  "schema": "crosseno-native-review-ledger",
+  "version": 1,
+  "dataVersion": "2026.07.3",
+  "batches": [
+    {
+      "batchId": "crosseno-native-en-1000-editorial-rewrite-2026-07",
+      "responsibleMaintainer": "Crosseno",
+      "reviewedAt": "2026-07-26",
+      "disposition": "accepted",
+      "recordCount": 1000,
+      "definitionCount": 1000,
+      "clueCount": 2000,
+      "reviewScope": "All answers, definitions, and clue candidates",
+      "licenseExpression": "CC0-1.0"
+    }
+  ]
+}

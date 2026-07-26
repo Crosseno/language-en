@@ -28,6 +28,7 @@
     "autoload": {"psr-4": {"Crosseno\\LanguageEn\\": "src/"}},
     "autoload-dev": {"psr-4": {"Crosseno\\LanguageEn\\Build\\": "build/", "Crosseno\\LanguageEn\\Tests\\": "tests/"}},
     "scripts": {
+        "source:build": "php bin/build-native-source.php",
         "artifacts:build": "php bin/build-artifacts.php",
         "artifacts:verify": "php bin/verify-artifacts.php",
         "test": "phpunit",
