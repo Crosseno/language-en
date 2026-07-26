@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.0 - 2026-07-26
+
 - Expose the validated English catalog, index, ordinal map, artifact identity, and clue coverage through the runtime-pack contract.
 - Document development-pack readiness and production acceptance gates.
 - Add the deterministic 1,000-answer native English development pack with 1,000 senses and 2,000 draft clues.
