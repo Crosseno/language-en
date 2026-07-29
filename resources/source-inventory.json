@@ -4,7 +4,7 @@
   "sources": [
     {
       "id": "crosseno-native-en-1000-2026-07",
-      "url": "https://github.com/Crosseno/language-en/tree/0.1.0/resources/source/curated-en.json",
+      "url": "https://github.com/Crosseno/language-en/blob/0.2.0/resources/source/curated-en.json",
       "versionOrDate": "2026-07-26",
       "sha256": "f212ad78bbb347649318a98ceafaaadd9c540fe28f31032d0b4f5232179ebccc",
       "licenseExpression": "CC0-1.0",

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Correct the published source provenance URL for the 1,000-answer development pack.
+
 ## 0.2.0 - 2026-07-26
 
 - Expose the validated English catalog, index, ordinal map, artifact identity, and clue coverage through the runtime-pack contract.
