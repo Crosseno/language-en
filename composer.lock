@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dedf112de8bbb9e2383215b6acf16b46",
+    "content-hash": "4c02ea09d47958ccf9173441cfd967ed",
     "packages": [
         {
             "name": "crosseno/core",

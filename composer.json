@@ -3,13 +3,6 @@
     "description": "Versioned English language rules and a legally redistributable development lexicon for Crosseno.",
     "type": "library",
     "license": "MIT",
-    "repositories": [
-        {"type": "path", "url": "../core", "options": {"symlink": true, "versions": {"crosseno/core": "0.1.0"}}},
-        {"type": "path", "url": "../lexicon", "options": {"symlink": true, "versions": {"crosseno/lexicon": "0.1.0"}}},
-        {"type": "path", "url": "../lexicon-sqlite", "options": {"symlink": true, "versions": {"crosseno/lexicon-sqlite": "0.1.0"}}},
-        {"type": "path", "url": "../lexicon-index", "options": {"symlink": true, "versions": {"crosseno/lexicon-index": "0.1.0"}}},
-        {"type": "path", "url": "../compiler", "options": {"symlink": true, "versions": {"crosseno/compiler": "0.1.0"}}}
-    ],
     "require": {
         "php": "^8.5",
         "ext-intl": "*",
