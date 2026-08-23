@@ -40,7 +40,7 @@ and explored-node totals are in `resources/benchmark-report.json`.
 
 Targets:
 
-1. Complete final contractual, legal, packaging, and release checks for the reviewed 1,000-answer pack.
+1. Development release: completed in `0.2.1`, including contractual, legal, packaging, artifact, and clean-installation checks for the reviewed 1,000-answer pack.
 2. Preview: 25,000 answers, two clues for at least 90% of senses, representative dialects, and published benchmark results.
 3. Production: 100,000 reviewed eligible answers, two clues for at least 95% of senses, stable supported-size/strategy success gates, full provenance and redistribution review, artifact-size acceptance, and an installation/support matrix.
 

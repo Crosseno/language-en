@@ -60,13 +60,14 @@ This pack is intended for deterministic integration, API examples, and
 small-grid benchmark work. Its answers span 3 through 10 cells. Every answer
 has an individually authored sense definition and two meaningfully distinct
 semantic clue candidates. Crosseno has accepted the content for the development
-release; final contractual, legal, packaging, and release checks remain.
+release. Version `0.2.1` completed its contractual, legal, packaging, and clean
+installation release checks; later documentation-only patch releases retain the
+same data version and readiness level.
 
-The next gate is final release review and publication of the 1,000-answer
-development pack. Preview targets are 25,000
-answers with two approved clues for at least 90% of included senses and
-representative dialect coverage. These are acceptance gates, not claims about
-the current pack.
+The next data gate is preview readiness: 25,000 answers with two approved clues
+for at least 90% of included senses, representative dialect coverage, and
+published benchmark results. These are acceptance gates, not claims about the
+current pack.
 
 See [runtime composition](docs/runtime-composition.md) and [data readiness](docs/data-readiness.md). The executable builder proof is `crosseno/builder/examples/generate-english.php`.
 
